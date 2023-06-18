@@ -1,0 +1,36 @@
+.ctrSlider {
+  display: flex;
+  margin-top: 2rem;
+  overflow-x: scroll;
+}
+
+.cardItem {
+  width: 400px;
+  margin: 5px 10px;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  background-color: aliceblue;
+}
+
+.imgItem {
+  width: 400px;
+  height: 520px;
+}
+.wrpGenre {
+  display: flex;
+  align-items: center;
+}
+
+.chipGenre {
+  height: 1.6rem;
+  width: 4rem;
+  border-radius: 20px;
+  background-color: #c92c6d;
+  text-align: center;
+  margin: 5px 5px;
+}
+.txtGenre {
+  font-size: 9px;
+  color: #f0eeed;
+}

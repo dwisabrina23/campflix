@@ -1,0 +1,41 @@
+.ctrNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  position: absolute;
+  height: 4.2rem;
+  margin-bottom: 2rem;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: transparent; /* Add this line to make the background transparent */
+  backdrop-filter: blur(5px); /* Add this line to apply a backdrop blur effect */
+  -webkit-backdrop-filter: blur(10px); /*Add this line for Safari compatibility */
+}
+
+.txtTitle {
+  flex-grow: 3;
+  font-weight: bold;
+  color: white;
+}
+
+.txtName {
+  font-size: 24;
+}
+
+.ctrInput {
+  flex-grow: 2;
+  margin: 0px 20px;
+}
+
+.stySearchInput {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #609ea2;
+}
+
+.txtName {
+  flex-grow: 1;
+}
