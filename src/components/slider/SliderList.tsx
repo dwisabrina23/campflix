@@ -1,12 +1,17 @@
 import SliderItem from "./SliderItem";
+import { Movie } from "@/types/Movie";
 import "./slider.css";
 
-const SliderList = ({ movie }) => {
+interface SliderListProps {
+  movie: Movie[];
+}
+
+const SliderList: React.FC<SliderListProps> = ({ movie }) => {
   return (
     <div className="ctrSlider">
       {movie.map((item, index) => {
         return (
-          <SliderItem key={index} imageUrl={item.show.image.original} title={item.show.name} genre={item.show.genres} />
+          <SliderItem key={index} imageUrl={item.image.original} title={item.name} genre={item.genres} url={item.url} />
         );
       })}
     </div>

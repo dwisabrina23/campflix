@@ -1,9 +1,17 @@
 import "./slider.css";
+interface SliderItemProps {
+  imageUrl: string;
+  title: string;
+  genre: string[];
+  url: string;
+}
 
-const SliderItem = ({ imageUrl, title, genre }) => {
+const SliderItem: React.FC<SliderItemProps> = ({ imageUrl, title, genre, url }) => {
   return (
-    <div className="cardItem">
-      <img className="imgItem" src={imageUrl} alt="" />
+    <div className="cardItem" onClick={() => window.open(url, "_blank", "noopener noreferrer")}>
+      <div style={{ height: "75%", padding: "0 0" }}>
+        <img className="imgItem" src={imageUrl} alt="" />
+      </div>
       <h3 className="txtTitle">{title}</h3>
       <div className="wrpGenre">
         {genre.map((item, index) => {

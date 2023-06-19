@@ -1,4 +1,5 @@
 import HeroSection from "@/components/hero/HeroSection";
+import Navbar from "@/components/navbar/Navbar";
 import SliderList from "@/components/slider/SliderList";
 import useGetMovieList from "@/hooks/useGetMovieList";
 
@@ -10,10 +11,11 @@ const Home = () => {
   }
   return (
     <>
-      {/* <Navbar /> */}
       {movieData.length > 0 && (
         <>
-          <HeroSection movie={movieData[6]} />
+          <HeroSection movie={movieData[6]}>
+            <Navbar />
+          </HeroSection>
           <SliderList movie={movieData} />
         </>
       )}

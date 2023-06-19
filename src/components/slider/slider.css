@@ -1,21 +1,28 @@
 .ctrSlider {
   display: flex;
+  flex-shrink: 0;
   margin-top: 2rem;
   overflow-x: scroll;
 }
 
 .cardItem {
-  width: 400px;
+  flex: 1 1 calc(20% - 30px);
+  min-width: 200px;
   margin: 5px 10px;
   border-radius: 0.6rem;
   -webkit-border-radius: 0.6rem;
   -moz-border-radius: 0.6rem;
-  background-color: aliceblue;
+  background-color: rgb(24, 27, 29);
+  cursor: pointer;
 }
 
 .imgItem {
-  width: 400px;
-  height: 520px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 40/57;
+  max-width: 100%;
+  object-fit: cover;
+  margin-top: 0;
 }
 .wrpGenre {
   display: flex;
@@ -23,14 +30,25 @@
 }
 
 .chipGenre {
-  height: 1.6rem;
+  height: 1.4rem;
   width: 4rem;
   border-radius: 20px;
-  background-color: #c92c6d;
+  background-color: rgba(201, 44, 57, 0.6);
+  mix-blend-mode: lighten;
   text-align: center;
   margin: 5px 5px;
 }
+
 .txtGenre {
-  font-size: 9px;
+  font-size: 8px;
+  color: #faa9cb;
+  font-weight: 600;
+  line-height: 5px;
+}
+
+.txtTitle {
+  font-size: 14px;
+  font-weight: 500;
   color: #f0eeed;
+  margin: 10px 10px;
 }
