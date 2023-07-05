@@ -3,11 +3,7 @@ import { BASE_URL } from "@/constants/index";
 import { Movie } from "@/types/Movie";
 
 export const sanitizeResponse = (data: any[]): Movie[] => {
-  console.log(data);
   return data.map((item) => {
-    {
-      /* <Navbar /> */
-    }
     const { name, rating, image, officialSite, genres, premiered, summary, url } = item.show;
     return {
       name,
